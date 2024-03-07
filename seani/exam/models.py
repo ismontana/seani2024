@@ -83,7 +83,7 @@ class Exam(models.Model):
                 BreakDown.objects.create(
                     exam = self,
                     question = question,
-                    correct = question.correct,
+                    correct = question.correc,
                     )
 
     def __str__(self):
@@ -109,7 +109,7 @@ class ExamModule(models.Model):
                 default = True
             )
     score = models.FloatField(
-                verbose_name = "Califiación",
+                verbose_name = "Calificación",
                 default = 0.0
             )
     
